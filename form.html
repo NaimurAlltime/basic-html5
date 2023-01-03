@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <style>
+        label {
+            display: block;
+            margin: 10px;
+        }
+        .gender{
+            width: 30%;
+        }
+        .programing{
+            width: 30%;
+            margin-top: 10px;
+        }
+        .info{
+            width: 30%;
+            margin-top: 10px;
+        }
+        .btn {
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Job Application Form</h1>
+    <form>
+        <label for="name">Your Name:
+            <input type="text" id="name" placeholder="Enter your name">
+        </label>
+        <label for="email">Your Email:
+            <input type="email" id="email" placeholder="Enter your email">
+        </label>
+        <label for="password">Your Password:
+            <input type="password" id="password" placeholder="Enter your password">
+        </label>
+        <fieldset class="gender">
+            <legend>Gender</legend>
+            <label for="male">
+                <input type="radio" name="gender" id="male">Male
+            </label>
+            <label for="female">
+                <input type="radio" name="gender" id="female">Female
+            </label>
+            <label for="others">
+                <input type="radio" name="gender" id="others">Others
+            </label>
+        </fieldset>
+        <fieldset class="programing">
+            <legend>Choose one or more programing language</legend>
+            <label for="programing">
+                <input type="checkbox" name="java" id="java">Java
+            </label>
+            <label for="programing">
+                <input type="checkbox" name="python" id="python">Python
+            </label>
+            <label for="programing">
+                <input type="checkbox" name="javascript" id="javascript">JavaScript
+            </label>
+            <label for="programing">
+                <input type="checkbox" name="php" id="php">PHP
+            </label>
+        </fieldset>
+        <fieldset class="info">
+            <legend>Details Your Information</legend>
+            <textarea name="info" id="info" cols="56" rows="8" placeholder="Your Information"></textarea>
+        </fieldset>
+        <div class="btn">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
