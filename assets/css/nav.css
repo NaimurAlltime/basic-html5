@@ -1,4 +1,4 @@
-nav ul {
+nav > ul {
     display: flex;
 }
 
@@ -17,4 +17,16 @@ ul li a {
 ul li a:hover {
     background-color: lightgray;
     color: rgb(244, 112, 11);
+}
+
+/* nested menu */
+nav li .dropdown {
+    display: none;
+}
+
+nav li:hover > .dropdown {
+    display: block;
+    position: absolute;
+    background-color: lightcyan;
+    padding-left: 6px;
 }
